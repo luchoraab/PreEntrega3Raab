@@ -779,9 +779,10 @@ main .container-3 .textosobremi .ptextosobremi {
   header .nav .barnav .menu a {
     text-decoration: none;
     color: black;
-    font-size: 13px;
+    font-size: 11px;
   }
   main .banner {
+    margin-top: 10px;
     width: 100vw;
     height: 80vh;
     background-position: top;
