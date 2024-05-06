@@ -1,0 +1,687 @@
+@media only screen and (min-width: 320px) and (max-width: 399px){
+    body{
+        background-color: darksalmon;
+        background-image: none;
+    }
+
+    header{
+        width: 100vw;
+        height: 20vh;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        align-items: center;
+        border-radius: 0%;
+        margin-right: 35px;
+        padding: auto;
+        .cabecera{
+            width: 20%;
+            height: 4em;
+            object-fit: cover;
+            justify-content: center;
+            align-items: center;  
+            border-style: solid;   
+            background-color: white;
+            border-radius: 20px;
+            margin-left: 30px;
+        }
+        .title-banner{
+            display: none;
+        }
+        .nav{
+            width: 100%;
+            height: 3em;   
+            .barnav{
+                width: 100%;
+                height: 100%;
+                .menu{
+                    width: 100%;
+                    height: 100%;
+                    background-color: darksalmon;
+                    border-style:solid ;
+                    border-radius: 20px;
+                    background-color: white;
+                    font-size: 10px;
+                    &:hover{
+                        background-color: salmon;
+                        a{
+                            text-decoration: none;
+                            color: black;
+                            font-size: 8px;
+                        }
+                    }
+                }
+            }        
+        }
+    }
+    main{
+        .sobremi{
+            font-size: 3rem;
+        }
+        .banner{
+            width: 100vw;
+            height:80vh;
+            background-position: center;
+            .social-menu{
+                ul{
+                    top: 85%;
+                    left: 50%;
+                    li {
+                        list-style: none;
+                        margin: 0 10px;
+                        a{
+                            width: 90px;
+                            height: 100px;
+                            .fa {
+                                color: #000000;
+                                font-size: 50px;
+                                line-height: 100px;
+                                transition: .5s;
+                                &:hover {
+                                    color: #ffffff;
+                                }
+                            }
+                            &:hover {
+                                transform: none;
+                            }
+                        }
+                        &:nth-child(1) a {
+                            background-color: #3b5999;
+                        }
+                        &:nth-child(2) a{
+                            background-color: #e4405f;
+                        }
+                        &:nth-child(3) a{
+                            background-color: #25d366;
+                        }
+                    }
+                }
+            }
+        }
+        .article{
+            width: 100vw;
+            height: 100%;
+            background-image: url(../assets/img/background/salmoncito.jpg);
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            .title-article{
+                font-size: 2.5em;
+                margin: 0.1em;
+            }
+            .paragraph-article{
+                font-size: 1em;
+                width: 85%;
+                text-align: justify;
+                margin: 1em 0;
+            }
+            .gallery{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .box-gallery{
+                    width: 100%;
+                    height: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .box-img{
+                        width: 100%;
+                        height: 80%;
+                        /*background-color: chartreuse;*/
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        margin: auto;
+                        img{
+                            object-fit: cover;
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            opacity: 1;
+                            border-radius: 0%;
+                            border-style:none;
+                            border-color: none;
+                        }
+                    }
+                    .btn-img{
+                        background-color: darksalmon;
+                        text-decoration: none;
+                        padding: 0.75em 3em;
+                        font-size: 1em;
+                        margin: 1em;
+                        border-radius: 0.5em;
+                        &:hover{
+                            background-color: salmon;
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+        .container-2 {  
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.1fr 0.1fr 0.1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            justify-items: center;
+            grid-template-areas:
+              "portadalibropatas"
+              "imglibropatas"
+              "textolibropatas";
+              background-image: none;
+              background-size: none;
+              width: 100vw;
+              height: 100%;
+            .portadalibropatas{ 
+                grid-area: portadalibropatas;
+                width: 100%;
+                height: 100%;
+            }
+            .imglibropatas{
+                grid-area: imglibropatas;
+                width: 100%;
+                height:100%;
+                margin-left: 0px;
+                margin-top: 0px;
+                .carousel-item{
+                    width: 100%;
+                    height:100%;
+                }
+            }
+            .textolibropatas{
+                .ptextolibropatas{
+                    font-size: 1.25em;
+                    width: 100%;
+                    background-image: url(../assets/img/background/salmoncito.jpg);
+                    background-size: cover;
+                }
+                .lavozdelinterior{
+                    .videolavoz{
+                        display: none;
+                    }
+                }
+            }
+
+        }
+        .formulario{
+            .pformulario{
+                font-size: 20px;
+                width: 80%;
+                text-align: center;
+                margin: 30px auto;
+                line-height: 25px;
+            }
+            form{
+                width: 300px;
+                background-image: url(../assets/img/background/salmocito2.jpg);
+                background-size: auto;
+            }
+            textarea{
+                resize: none;
+            }
+            input[type="submit"] {
+                font-size: 18px;
+                cursor: pointer;
+            }
+            label, input, textarea, select{
+                display: block;
+                width: 80%;
+                margin-left: 20px;
+            }
+
+        }
+        .gallery-yt{
+            width: 90%;
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-radius: 30px;
+        }
+        .container-3{  
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.1fr 0.1fr 0.1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            justify-items: center;
+            grid-template-areas:
+              "portadasobremi"
+              "imgsobremi"
+              "textosobremi";
+              background-image: none;
+              background-size: none;
+              width: 100vw;
+              height: 100%; 
+            .portadasobremi{ 
+                grid-area: portadasobremi;
+                width: 100%;
+                height: 100%;
+            }
+            .imgsobremi{
+                grid-area: imgsobremi;
+                width: 100%;
+                height:100%;
+                margin-left: 0px;
+                margin-top: 0px;
+                .carousel-item{
+                    width: 100%;
+                    height:100%;
+                }
+            }
+            .textosobremi{ 
+                grid-area: textosobremi;
+                width: 100%;
+                height:100%;
+                .ptextosobremi{
+                    font-size: 1.25em;
+                    width: 100%;
+                    background-image: url(../assets/img/background/salmoncito.jpg);
+                    background-size: cover;          
+                }
+            }
+        }
+    }
+    .footer{
+        width: 100%;
+        height: 6em;
+        background-color: salmon;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: auto;
+        .copyright{
+            font-size: 1rem;
+            text-align: center;
+        }
+    }
+
+}
+
+/*FIN MEDIAQUERYS HASTA 399PX*/
+
+@media only screen and (min-width: 400px) and (max-width: 1023px){
+    body{
+        background-color: darksalmon;
+        background-image: none;
+    }
+    header{
+        width: 100vw;
+        height: 20vh;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        align-items: center;
+        border-radius: 0%;
+        margin-right: 35px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        .cabecera{
+            width: 20%;
+            height: 60%;
+            object-fit: cover;
+            justify-content: center;
+            align-items: center;  
+            border-style: solid;   
+            background-color: white;
+            border-radius: 10px;
+            margin-left: 30px;
+            margin-bottom: 5px;
+        }
+        .logo{
+            margin-left: 10px ;
+        }
+        .title-banner{
+            display: none;
+        }
+        .nav{
+            width: 100%;
+            height: 3em;
+            .barnav{
+                width: 100%;
+                height: 100%;
+                .menu{
+                    width: 100%;
+                    height: 100%;
+                    background-color: darksalmon;
+                    border-style:solid ;
+                    border-radius: 20px;
+                    background-color: white;
+                    &:hover{
+                        background-color: salmon;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: black;
+                        font-size: 13px;
+                    }
+                } 
+
+            }
+        }
+    }
+    
+    main{
+        .banner{
+            margin-top: 10px;
+            width: 100vw;
+            height:80vh;
+            background-position:top ;
+            .social-menu {
+                top: 85%;
+                left: 50%;
+                ul{
+                    li {
+                        list-style: none;
+                        margin: 0 10px;
+                        .fa {
+                            color: #000000;
+                            font-size: 50px;
+                            line-height: 100px;
+                            transition: .5s;
+                            &:hover {
+                                color: #ffffff;
+                            }
+                        }
+                        a{
+                            &:hover {
+                                transform: none;
+                            }
+                        }
+                        &:nth-child(1) a {
+                            background-color: #3b5999;
+                        }
+                        &:nth-child(2) a{
+                            background-color: #e4405f;
+                        }
+                        &:nth-child(3) a{
+                            background-color: #25d366;
+                        }
+                    }
+                }
+            }
+        }
+        .article{
+            width: 100vw;
+            height: 100%;
+            background-image: url(../assets/img/background/salmoncito.jpg);
+            background-size: top;
+            display: flex;
+            flex-direction: column;
+            margin-top: 7px;
+            .title-article{
+                font-size: 2.5em;
+                margin: 0.1em;
+            }
+            .sobremi{
+                font-size: 3rem;
+            }
+            .ptextolibropatas{
+                font-size: 1.25em;
+                width: 100%;
+                background-image: url(../assets/img/background/salmoncito.jpg);
+                background-size: cover;
+            }
+            .gallery{
+                width: 100%;
+                height: 100%;
+                /*background-color: blueviolet;*/
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .box-gallery{
+                    width: 100%;
+                    height: 50%;
+                    /*background-color: aqua;*/
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .box-img{
+                        width: 100%;
+                        height: 80%;
+                        /*background-color: chartreuse;*/
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        margin: auto;
+                        img{
+                            object-fit: cover;
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            opacity: 1;
+                            border-radius: 0%;
+                            border-style:none;
+                            border-color: none;
+                        }
+                    }
+                    .btn-img{
+                        background-color: darksalmon;
+                        text-decoration: none;
+                        padding: 0.75em 3em;
+                        font-size: 1em;
+                        margin: 1em;
+                        border-radius: 0.5em;
+                        &:hover{
+                            background-color: salmon;
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+        .container-2 {  
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.1fr 0.1fr 0.1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            justify-items: center;
+            grid-template-areas:
+              "portadalibropatas"
+              "imglibropatas"
+              "textolibropatas";
+              background-image: none;
+              background-size: none;
+              width: 100vw;
+              height: 100%;
+            .portadalibropatas{ 
+                grid-area: portadalibropatas;
+                width: 100%;
+                height: 100%;
+                margin-top: 10px;
+                .sobremi{
+                    font-size: 3rem;
+                }
+            }
+            .imglibropatas{
+                grid-area: imglibropatas;
+                width: 100%;
+                height:100%;
+                margin-left: 0px;
+                margin-top: 0px;
+                .carousel-item{
+                    width: 100%;
+                    height:100%;
+                }
+            }
+            .textolibropatas{ 
+                grid-area: textolibropatas;
+                width: 100%;
+                height:100%;
+                .lavozdelinterior{
+                    margin-left: 20px;
+                    margin-bottom: auto;
+                    .videolavoz{
+                        width: 90vw;
+                    }
+                }
+            }
+        }
+        .container-3 {  
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.1fr 0.1fr 0.1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            justify-items: center;
+            grid-template-areas:
+              "portadasobremi"
+              "imgsobremi"
+              "textosobremi";
+              background-image: none;
+              background-size: none;
+              width: 100vw;
+              height: 100%; 
+            .portadasobremi{ 
+                grid-area: portadasobremi;
+                width: 100%;
+                height: 100%;
+                .sobremi{
+                    font-size: 3rem;
+                }
+            }
+            .imgsobremi{
+                grid-area: imgsobremi;
+                width: 100%;
+                height:100%;
+                margin-left: 0px;
+                margin-top: 0px;
+                .carousel-item{
+                    width: 100%;
+                    height:100%;
+                }
+            }
+            .textosobremi{ 
+                grid-area: textosobremi;
+                width: 100%;
+                height:100%;
+                .ptextosobremi{
+                    font-size: 1.25em;
+                    width: 100%;
+                    background-image: url(../assets/img/background/salmoncito.jpg);
+                    background-size: cover;
+                }
+            }
+        }
+        .formulario{
+            .pformulario{
+                font-size: 20px;
+                width: 80%;
+                text-align: center;
+                margin: 30px auto;
+                line-height: 25px;
+            }  
+            form{
+                width: 400px;
+                background-image: url(../assets/img/background/salmocito2.jpg);
+                background-size: auto;
+                textarea{
+                    resize: none;
+                }
+                input[type="submit"] {
+                    font-size: 18px;
+                    cursor: pointer;
+                }
+            }
+        }
+        .gallery-yt{
+            width: 90%;
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-radius: 30px;
+        }
+    }
+    .footer{
+        width: 100%;
+        height: 6em;
+        background-color: salmon;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: auto;
+        .copyright{
+            font-size: 1rem;
+            text-align: center;
+        }
+    } 
+}
+
+/*FIN MEDIAQUERYS HASTA 1023PX*/
+
+@media only screen and (min-width: 1024px) and (max-width: 1628px){
+    
+    header{
+        .cabecera{
+            .title-banner{
+                font-size: 1.3em;
+            }
+        }
+    }
+    main{
+        .container-2{
+          .textolibropatas{
+                .lavozdelinterior{
+                    .videolavoz{
+                        width: 500px;
+                        height: 400px;
+                    }
+                }     
+            }
+        }
+        .container-3{
+            .portadasobremi{ 
+                grid-area: portadasobremi;
+                width: 100%;
+                height: 15%;
+            }
+            .imgsobremi{
+                grid-area: imgsobremi;
+                width: 100%;
+                height:100%;
+                margin-left: 0px;
+                margin-top: 0px;
+                margin-top: -113px;
+                .carousel-item{
+                    width: 100%;
+                    height:100%;
+                }
+            }
+            .textosobremi{ 
+                grid-area: textosobremi;
+                /*background-color: salmon;*/
+                width: 90%;
+                height:90%;
+                margin-top: -110px;
+                .ptextosobremi{
+                    font-size: 1.25em;
+                    width: 90%;
+                    background-image: url(../assets/img/background/salmoncito.jpg);
+                    background-size: cover;
+                }
+            }
+        }
+    }
+}

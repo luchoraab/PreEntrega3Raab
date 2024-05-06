@@ -1,0 +1,346 @@
+main{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2{
+        background-color: white;
+        width: 100%;
+        margin: auto;
+        padding: auto;
+        font-size: 5em;
+        font-weight: bold;
+        justify-content: center;
+        align-items: center;
+        text-align: center; 
+    }
+    p{
+        font-size: 30px;
+        width: 80%;
+        text-align: center;
+        margin: 30px auto;
+        line-height: 25px; 
+        font-weight: bold;  
+    }
+    .banner{
+        width: 100%;
+        height:100vh;
+        background-image: url(../assets/img/feria/visitasilviaferiadellibro.jpg);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        .social-menu{
+            ul {
+                position: absolute;
+                top: 90%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                padding: 0;
+                margin: 0;
+                display: flex;
+                li {
+                    list-style: none;
+                    margin: 0 10px;
+                    .fa {
+                        color:black;
+                        font-size: 50px;
+                        line-height: 100px;
+                        transition: .5s;
+                        &:hover {
+                            color:white;
+                        }
+                    }
+                    a {
+                        position: relative;
+                        display: block;
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 50%;
+                        border-color: black;
+                        background-color: white;
+                        text-align: center;
+                        transition: 0.5s;
+                        transform: translate(0,0px);
+                        box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+                        border-style:solid ;
+                        &:hover {
+                            transform: rotate(0deg) skew(0deg) translate(0, -10px);
+                        }
+                    }
+                    &:nth-child(1) a:hover {
+                        background-color: #3b5999;
+                    }
+                    &:nth-child(2) a:hover {
+                        background-color: #e4405f;
+                    }
+                    &:nth-child(3) a:hover {
+                        background-color: #25d366;
+                    }
+                }
+            }
+
+        }
+    }
+    .article{
+        width: 100%;
+        height: 100vh;
+        background-image: url(../assets/img/background/salmoncito.jpg);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .title-article{
+            display: flex;
+            background-color: white;
+            width: 100%;
+            font-size: 5em;
+            font-weight: bold;
+            justify-content: center;
+            align-items: center;
+        }
+        .ptextolibropatas{
+            font-size: 1.25em;
+            width: 90%;
+            text-align: justify;
+            padding: 3.5rem 1rem;
+            border-style: double;
+            border-color: black;
+            background-image: url(../assets/img/background/blanco.jpg);
+        }
+        .gallery{
+            width: 90%;
+            height: 70%;
+            /*background-color: blueviolet;*/
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .box-gallery{
+                width: 24%;
+                height: 100%;
+                /*background-color: aqua;*/
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                .box-img{
+                    width: 100%;
+                    height: 100%;
+                    /*background-color: chartreuse;*/
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    img{
+                        object-fit: cover;
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        opacity: 0.9;
+                        border-radius: 20px;
+                        border-style:solid;
+                        border-color: black;
+                        &:hover{
+                            object-fit: cover;
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            opacity: 1;
+                        }
+                    }
+                }
+                .btn-img{
+                    background-color: darksalmon;
+                    text-decoration: none;
+                    padding: 0.75em 3em;
+                    font-size: 0.9em;
+                    margin: 1em;
+                    border-radius: 0.5em;
+                    color: black;
+                    font-weight: bold; 
+                    margin-top: 10px;
+                    margin-bottom: 90px;
+                    &:hover{
+                        background-color: salmon;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+    .formulario{ 
+        grid-area: formulario;
+        width: 100%;
+        height: 100%;
+        display:flex;
+        flex-direction: column;
+        justify-content:center;  
+        align-items: center; 
+        font-size: 20px;
+        font-weight: bold;
+        .pformulario{
+            font-size: 25px;
+            width: 50%;
+            text-align: center;
+            margin: 30px auto;
+            line-height: 25px;
+            background-image: url(../assets/img/background/blanco.jpg);
+            border-style: solid;
+            border-color: black;
+        }
+        form{
+            width: 30%;
+            height: 60%;
+            background-image: url(../assets/img/background/blanco.jpg);
+            background-size: auto;
+            border-style: solid;
+            border-color: black;
+            label, input, textarea, select{
+                display: block;
+                width: 80%;
+                margin-left: 50px;
+            }
+            input, textarea, select{
+                margin-bottom: 20px;
+            }
+            textarea{
+                resize: none;
+            }
+            input[type="submit"]{
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            }
+            
+        }
+    }
+    .container-2 {  
+        display: grid;
+        grid-template-columns: 1.5fr 0.5fr 1fr;
+        grid-template-rows: 0.5fr 0.3fr 2.2fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "portadalibropatas portadalibropatas portadalibropatas"
+          "textolibropatas imglibropatas imglibropatas "
+          "textolibropatas imglibropatas imglibropatas";
+          background-image: url(../assets/img/background/salmoncito.jpg);
+          background-size: cover;
+        .portadalibropatas{ 
+            grid-area: portadalibropatas;
+            .sobremi{
+                height: 100%;
+            }
+        }
+        .textolibropatas{ 
+            grid-area: textolibropatas;
+            width: 100%;
+            height:100vh;
+            .ptextolibropatas{
+                font-size: 1.25em;
+                width: 90%;
+                text-align: justify;
+                padding: 3rem 1rem;
+                border-style: double;
+                border-color: black;
+                background-image: url(../assets/img/background/blanco.jpg);
+            }
+            .lavozdelinterior{
+                margin-left: 40px;
+                .videolavoz{
+                    width:685px; 
+                    height:490px;
+                }
+            }
+        }
+        .imglibropatas{
+            grid-area: imglibropatas;
+            width: 100%;
+            height:100vh;
+            .carousel-item{
+                width:100%;
+                height:100vh;
+            }
+        }
+    }
+    .gallery-yt{
+        width: 90%;
+        height: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-radius: 30px;
+        .box-gallery-yt{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+    }
+    .container-3 {  
+        display: grid;
+        grid-template-columns: 1.5fr 0.5fr 1fr;
+        grid-template-rows: 0.5fr 0.3fr 2.2fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "portadasobremi portadasobremi portadasobremi"
+          "imgsobremi textosobremi textosobremi"
+          "imgsobremi textosobremi textosobremi";
+          background-image: url(../assets/img/background/salmoncito.jpg);
+          background-size: cover;
+        .portadasobremi{ 
+            grid-area: portadasobremi;
+            .sobremi{
+                height: 100%;
+
+            }
+        }
+        .imgsobremi{
+            grid-area: imgsobremi;
+            width: 100%;
+            height:100vh;
+            .carousel-item{
+                width: 100%;
+                height:100vh;
+            }
+        }
+        .textosobremi{ 
+            grid-area: textosobremi;
+            width: 100%;
+            height:100vh;
+            .ptextosobremi{
+                font-size: 1.25em;
+                width: 90%;
+                text-align: justify;
+                padding: 3rem 1rem;
+                border-style: double;
+                border-color: black;
+                background-image: url(../assets/img/background/blanco.jpg);
+            }
+        }
+    }           
+}
+
+
+
+
+
+
+
+
+
+

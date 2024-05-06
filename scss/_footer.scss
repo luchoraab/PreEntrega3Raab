@@ -1,0 +1,14 @@
+.footer{
+    width: 80%;
+    height: 4em;
+    background-color: darksalmon;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    .copyright{
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+}

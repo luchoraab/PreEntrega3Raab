@@ -1,0 +1,1220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Courgette", cursive;
+    font-weight: 400;
+    font-style: normal;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/img/background/rosa\ raro.jpg);
+    background-size:cover ;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+/*Inicio HEADER*/
+header{
+    width: 80%;
+    height: 3em;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 20px;
+}
+.cabecera{
+    width: 20%;
+    height: 3em;
+    object-fit: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.title-banner{
+    width: 100%;
+    margin: auto;
+    padding: auto;
+    font-size: 2em;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    object-fit: cover;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+/*Inicio NAV*/
+.nav{
+    width: 80%;
+    height: 3em;
+    margin: 0 auto;
+    text-align: center;
+}
+.barnav{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.menu{
+    width: 20%;
+    height: 100%;
+    background-color: darksalmon;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.menu:hover{
+    background-color: salmon;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/* Inicio MAIN*/
+main{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*Inicio BANNER*/
+.banner{
+    width: 100%;
+    height:100vh;
+    background-image: url(../assets/img/feria/visitasilviaferiadellibro.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+.social-menu ul {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.social-menu ul li {
+    list-style: none;
+    margin: 0 10px;
+}
+.social-menu ul li .fa {
+    color: #000000;
+    font-size: 50px;
+    line-height: 100px;
+    transition: .5s;
+}
+.social-menu ul li .fa:hover {
+    color: #ffffff;
+}
+.social-menu ul li a {
+    position: relative;
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    transition: 0.5s;
+    transform: translate(0,0px);
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+    border-style:solid ;
+}
+.social-menu ul li a:hover {
+    transform: rotate(0deg) skew(0deg) translate(0, -10px);
+}
+
+.social-menu ul li:nth-child(1) a:hover {
+    background-color: #3b5999;
+}
+
+.social-menu ul li:nth-child(2) a:hover {
+    background-color: #e4405f;
+}
+
+.social-menu ul li:nth-child(3) a:hover {
+    background-color: #25d366;
+}
+
+
+/*Inicio ARTICULO*/
+.article{
+    width: 100%;
+    height: 100vh;
+    /*background-color: salmon;*/
+    background-image: url(../assets/img/background/salmoncito.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title-article{
+    display: flex;
+    background-color: white;
+    width: 100%;
+    font-size: 5em;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+.paragraph-article{
+    font-size: 1.25em;
+    width: 80%;
+    text-align: justify;
+    margin: 2em 0;
+    border-style: double;
+    border-color: white;
+    background-image: url(../assets/img/background/salmocito2.jpg);
+}
+.gallery{
+    width: 90%;
+    height: 70%;
+    /*background-color: blueviolet;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.box-gallery{
+    width: 24%;
+    height: 100%;
+    /*background-color: aqua;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.box-img{
+    width: 100%;
+    height: 100%;
+    /*background-color: chartreuse;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box-img img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+    border-radius: 20px;
+    border-style:solid;
+    border-color: black;
+}
+.box-img img:hover{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+.btn-img{
+    background-color: darksalmon;
+    text-decoration: none;
+    padding: 0.75em 3em;
+    font-size: 1em;
+    margin: 1em;
+    border-radius: 0.5em; 
+}
+.btn-img:hover{
+    background-color: salmon;
+    color: black;
+}
+/*Inicio FOOTER*/
+.footer{
+    width: 80%;
+    height: 4em;
+    background-color: darksalmon;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+}
+.copyright{
+    font-size: 1.25rem;
+}
+
+/*FORMULARIO*/
+
+.formulario{ 
+    grid-area: formulario;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;  
+    align-items: center; 
+    font-size: 20px;
+}
+ form{
+    width: 30%;
+    height: 60%;
+    background-image: url(../assets/img/background/salmocito2.jpg);
+    background-size: auto;
+    border-style: double;
+    border-color: white;
+}
+
+label, input, textarea, select{
+    display: block;
+    width: 80%;
+    margin-left: 50px;
+}
+
+input, textarea, select{
+    margin-bottom: 20px;
+}
+
+textarea{
+    resize: none;
+}
+
+input[type="submit"] {
+    font-size: 20px;
+    cursor: pointer;
+}
+main p{
+        font-size: 30px;
+        width: 80%;
+        text-align: center;
+        margin: 30px auto;
+        line-height: 25px;
+    
+}
+.pformulario{
+    font-size: 30px;
+    width: 80%;
+    text-align: center;
+    margin: 30px auto;
+    line-height: 25px;
+}
+h2{
+    margin-top: 50px;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;  
+}
+
+.fotosilvia{ 
+    grid-area: fotosilvia;
+    width: 100%;
+    height:100%;
+    align-items: center;
+}
+.imgform{
+    width: 100%;
+    height:80%;
+    margin-top: 5rem;
+    border-radius: 20px;
+}
+  
+/*PAGINA 2 PATAS DE RESORTES*/
+
+.container-2 {  
+  display: grid;
+  grid-template-columns: 1.5fr 0.5fr 1fr;
+  grid-template-rows: 0.5fr 0.3fr 2.2fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "portadalibropatas portadalibropatas portadalibropatas"
+    "textolibropatas imglibropatas imglibropatas "
+    "textolibropatas imglibropatas imglibropatas";
+    background-image: url(../assets/img/background/salmoncito.jpg);
+    background-size: cover;
+}
+
+.portadalibropatas{ 
+    grid-area: portadalibropatas;
+
+ }
+ .portadapatas{
+    width: 100%;
+    height: 15vh;
+}
+
+.imglibropatas{
+    grid-area: imglibropatas;
+    width: 100%;
+    height:100vh;
+}
+
+.carousel-item{
+    width:100%;
+    height:100vh;
+}
+
+.textolibropatas{ 
+    grid-area: textolibropatas;
+    /*background-color: salmon;*/
+    width: 100%;
+    height:100vh;
+}
+.ptextolibropatas{
+    font-size: 1.25em;
+    width: 90%;
+    text-align: justify;
+    padding: 3rem 1rem;
+    border-style: double;
+    border-color: white;
+    background-image: url(../assets/img/background/salmocito2.jpg);
+}
+.lavozdelinterior{
+    margin-left: 40px;
+}
+.videolavoz{
+    width:685px; 
+    height:490px;
+}
+/*PAGINA 3 FERIA DEL LIBRO*/
+.gallery-yt{
+    width: 90%;
+    height: 70%;
+    /*background-color: darksalmon;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 30px;
+}
+.box-gallery-yt{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*background-color: violet;*/
+    padding: 10px;
+}
+.box-yt{
+    width: 90%;
+    height: 100%;
+    /*background-color: chartreuse;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.btn-img-yt{
+    background-color: salmon;
+    text-decoration: none;
+    padding: 0.75em 3em;
+    font-size: 1em;
+    margin: 1em;
+    border-radius: 0.5em; 
+}
+.btn-img-yt:hover{
+    color: rgb(255, 255, 255);
+}
+.imgferiadellibro{
+    width: 100%;
+    height:100vh;
+}
+
+/*PAGINA 4 SOBRE MÍ*/
+
+.container-3 {  
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr 1fr;
+    grid-template-rows: 0.5fr 0.3fr 2.2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "portadasobremi portadasobremi portadasobremi"
+      "imgsobremi textosobremi textosobremi"
+      "imgsobremi textosobremi textosobremi";
+      background-image: url(../assets/img/background/salmoncito.jpg);
+      background-size: cover;
+  }
+  
+  .portadasobremi{ 
+      grid-area: portadasobremi;
+  
+   }
+  
+  .imgsobremi{
+      grid-area: imgsobremi;
+      width: 100%;
+      height:100vh;
+  }
+  
+  .carousel-item{
+      width: 100%;
+      height:100vh;
+  }
+  
+  .textosobremi{ 
+      grid-area: textosobremi;
+      width: 100%;
+      height:100vh;
+
+  }
+  .ptextosobremi{
+      font-size: 1.25em;
+      width: 90%;
+      text-align: justify;
+      padding: 3rem 1rem;
+      border-style: double;
+      border-color: white;
+      background-image: url(../assets/img/background/salmocito2.jpg);
+  }
+
+.sobremi{
+    background-color: white;
+    width: 100%;
+    margin: auto;
+    padding: auto;
+    font-size: 5em;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;   
+}
+
+/*RESPONSIVE*/
+@media only screen and (min-width: 320px) and (max-width: 399px){
+body{
+    background-color: darksalmon;
+    background-image: none;
+}
+header{
+    width: 100vw;
+    height: 20vh;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    border-radius: 0%;
+    margin-right: 35px;
+    padding: auto;
+}
+.cabecera{
+    width: 20%;
+    height: 4em;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;  
+    border-style: solid;   
+    background-color: white;
+    border-radius: 20px;
+    margin-left: 30px;
+}
+    
+.title-banner{
+    display: none;
+}
+.nav{
+    width: 100%;
+    height: 3em;
+             
+}
+.barnav{
+    width: 100%;
+    height: 100%;
+}
+.menu{
+    width: 100%;
+    height: 100%;
+    background-color: darksalmon;
+    border-style:solid ;
+    border-radius: 20px;
+    background-color: #ffffff;
+}
+.menu:hover{
+    background-color: salmon;
+    font-size: 1rem;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 8px;
+}
+     
+.banner{
+    width: 100vw;
+    height:80vh;
+    background-position: center;
+}
+.social-menu ul {
+    top: 85%;
+    left: 50%;
+}
+.social-menu ul li {
+    list-style: none;
+    margin: 0 10px;
+}
+.social-menu ul li a {
+    width: 90px;
+    height: 100px;
+}
+.social-menu ul li .fa {
+    color: #000000;
+    font-size: 50px;
+    line-height: 100px;
+    transition: .5s;
+}
+.social-menu ul li .fa:hover {
+    color: #ffffff;
+}
+     
+.social-menu ul li a:hover {
+    transform: none;
+}
+     
+.social-menu ul li:nth-child(1) a {
+    background-color: #3b5999;
+}
+     
+.social-menu ul li:nth-child(2) a{
+background-color: #e4405f;
+}
+     
+.social-menu ul li:nth-child(3) a{
+    background-color: #25d366;
+}
+    
+.article{
+    width: 100vw;
+    height: 100%;
+    background-image: url(../assets/img/background/salmoncito.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+
+}
+.title-article{
+    font-size: 2.5em;
+    margin: 0.1em;
+}
+.paragraph-article{
+    font-size: 1em;
+    width: 85%;
+    text-align: justify;
+    margin: 1em 0;
+}
+.gallery{
+    width: 100%;
+    height: 100%;
+    /*background-color: blueviolet;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box-gallery{
+    width: 100%;
+    height: 50%;
+    /*background-color: aqua;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box-img{
+    width: 100%;
+    height: 80%;
+    /*background-color: chartreuse;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.box-img img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    border-radius: 0%;
+    border-style:none;
+    border-color: none;
+}
+     
+.btn-img{
+    background-color: darksalmon;
+    text-decoration: none;
+    padding: 0.75em 3em;
+    font-size: 1em;
+    margin: 1em;
+    border-radius: 0.5em;
+}
+.btn-img:hover{
+    background-color: salmon;
+    color: black;
+}
+    
+.footer{
+    width: 90%;
+    height: 6em;
+    background-color: darksalmon;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    margin-top: auto;
+}
+.copyright{
+    font-size: 1rem;
+}
+.container-2 {  
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.1fr 0.1fr 0.1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-items: center;
+  grid-template-areas:
+    "portadalibropatas"
+    "imglibropatas"
+    "textolibropatas";
+    background-image: none;
+    background-size: none;
+    width: 100vw;
+    height: 100%;
+
+}
+.portadalibropatas{ 
+    grid-area: portadalibropatas;
+    width: 100%;
+    height: 15%;
+ }
+ .portadapatas{
+    width: 100%;
+    height: 15%;
+}
+
+.imglibropatas{
+    grid-area: imglibropatas;
+    width: 100%;
+    height:100%;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.carousel-item{
+    width: 100%;
+    height:100%;
+}
+
+.textolibropatas{ 
+    grid-area: textolibropatas;
+    /*background-color: salmon;*/
+    width: 100%;
+    height:100%;
+}
+.ptextolibropatas{
+    font-size: 1.25em;
+    width: 100%;
+    background-image: url(../assets/img/background/salmoncito.jpg);
+    background-size: cover;
+}
+.lavozdelinterior{
+    display: none;
+}
+.videolavoz{
+    width:100vw; 
+    height:30vh;
+}
+
+form{
+    width: 300px;
+    background-image: url(../assets/img/background/salmocito2.jpg);
+    background-size: auto;
+}
+
+textarea{
+    resize: none;
+}
+
+input[type="submit"] {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.pformulario{
+    font-size: 20px;
+    width: 80%;
+    text-align: center;
+    margin: 30px auto;
+    line-height: 25px;
+}
+
+.sobremi{
+    font-size: 3rem;
+}
+label, input, textarea, select{
+    display: block;
+    width: 80%;
+    margin-left: 20px;
+}
+
+.gallery-yt{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 30px;
+}
+
+.container-3 {  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-items: center;
+    grid-template-areas:
+      "portadasobremi"
+      "imgsobremi"
+      "textosobremi";
+      background-image: none;
+      background-size: none;
+      width: 100vw;
+      height: 100%; 
+  }
+.portadasobremi{ 
+    grid-area: portadasobremi;
+    width: 100%;
+    height: 15%;
+}
+
+.imgsobremi{
+    grid-area: imgsobremi;
+    width: 100%;
+    height:100%;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.carousel-item{
+    width: 100%;
+    height:100%;
+}
+
+.textosobremi{ 
+    grid-area: textosobremi;
+    /*background-color: salmon;*/
+    width: 100%;
+    height:100%;
+}
+.ptextosobremi{
+    font-size: 1.25em;
+    width: 100%;
+    background-image: url(../assets/img/background/salmoncito.jpg);
+    background-size: cover;
+
+}
+
+}
+
+@media only screen and (min-width: 400px) and (max-width: 1023px){
+body{
+    background-color: darksalmon;
+    background-image: none;
+}
+header{
+    width: 100vw;
+    height: 20vh;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    border-radius: 0%;
+    margin-right: 35px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.cabecera{
+    width: 20%;
+    height: 60%;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;  
+    border-style: solid;   
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-bottom: 5px;
+}
+.logo{
+    margin-left: 10px ;
+}
+
+.title-banner{
+    display: none;
+}
+.nav{
+    width: 100%;
+    height: 3em;
+        
+}
+.barnav{
+    width: 100%;
+    height: 100%;
+}
+.menu{
+    width: 100%;
+    height: 100%;
+    background-color: darksalmon;
+    border-style:solid ;
+    border-radius: 20px;
+    background-color: #ffffff;
+}
+.menu:hover{
+    background-color: salmon;
+    font-size: 1rem;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+ 
+.banner{
+    margin-top: 10px;
+    width: 100vw;
+    height:80vh;
+    background-position:top ;
+}
+.social-menu ul {
+    top: 85%;
+    left: 50%;
+}
+.social-menu ul li {
+    list-style: none;
+    margin: 0 10px;
+}
+.social-menu ul li .fa {
+    color: #000000;
+    font-size: 50px;
+    line-height: 100px;
+    transition: .5s;
+}
+.social-menu ul li .fa:hover {
+    color: #ffffff;
+}
+ 
+.social-menu ul li a:hover {
+    transform: none;
+}
+ 
+.social-menu ul li:nth-child(1) a {
+    background-color: #3b5999;
+}
+ 
+.social-menu ul li:nth-child(2) a{
+    background-color: #e4405f;
+}
+ 
+.social-menu ul li:nth-child(3) a{
+    background-color: #25d366;
+}
+ .article{
+    width: 100vw;
+    height: 100%;
+    /*background-color: salmon;*/
+    background-image: url(../assets/img/background/salmoncito.jpg);
+    background-size: top;
+    display: flex;
+    flex-direction: column;
+    margin-top: 7px;
+}
+.title-article{
+    font-size: 2.5em;
+    margin: 0.1em;
+}
+.paragraph-article{
+    font-size: 1em;
+    width: 85%;
+    text-align: justify;
+    margin: 1em 0;
+}
+.gallery{
+    width: 100%;
+    height: 100%;
+    /*background-color: blueviolet;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box-gallery{
+    width: 100%;
+    height: 50%;
+    /*background-color: aqua;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box-img{
+    width: 100%;
+    height: 80%;
+    /*background-color: chartreuse;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.box-img img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    border-radius: 0%;
+    border-style:none;
+    border-color: none;
+}
+ 
+.btn-img{
+    background-color: darksalmon;
+    text-decoration: none;
+    padding: 0.75em 3em;
+    font-size: 1em;
+    margin: 1em;
+    border-radius: 0.5em;
+}
+.btn-img:hover{
+    background-color: salmon;
+    color: black;
+}
+
+.footer{
+    width: 90%;
+    height: 10%;
+    background-color: darksalmon;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
+ .copyright{
+    font-size: 1rem;
+}
+
+.container-2 {  
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.1fr 0.1fr 0.1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-items: center;
+  grid-template-areas:
+    "portadalibropatas"
+    "imglibropatas"
+    "textolibropatas";
+    background-image: none;
+    background-size: none;
+    width: 100vw;
+    height: 100%;
+
+}
+.portadalibropatas{ 
+    grid-area: portadalibropatas;
+    width: 100%;
+    height: 15%;
+    margin-top: 10px;
+ }
+.portadapatas{
+    width: 100%;
+    height: 15%;
+}
+
+.imglibropatas{
+    grid-area: imglibropatas;
+    width: 100%;
+    height:100%;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.carousel-item{
+    width: 100%;
+    height:100%;
+}
+
+.textolibropatas{ 
+    grid-area: textolibropatas;
+    /*background-color: salmon;*/
+    width: 100%;
+    height:100%;
+}
+.ptextolibropatas{
+    font-size: 1.25em;
+    width: 100%;
+    background-image: url(../assets/img/background/salmoncito.jpg);
+    background-size: cover;
+}
+.lavozdelinterior{
+    display: none;
+}
+.videolavoz{
+    width:100vw; 
+    height:30vh;
+}
+/*TERCER ENTREGA*/
+.container-3 {  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-items: center;
+    grid-template-areas:
+      "portadasobremi"
+      "imgsobremi"
+      "textosobremi";
+      background-image: none;
+      background-size: none;
+      width: 100vw;
+      height: 100%; 
+  }
+.portadasobremi{ 
+    grid-area: portadasobremi;
+    width: 100%;
+    height: 15%;
+}
+
+.imgsobremi{
+    grid-area: imgsobremi;
+    width: 100%;
+    height:100%;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.carousel-item{
+    width: 100%;
+    height:100%;
+}
+
+.textosobremi{ 
+    grid-area: textosobremi;
+    /*background-color: salmon;*/
+    width: 100%;
+    height:100%;
+}
+.ptextosobremi{
+    font-size: 1.25em;
+    width: 100%;
+    background-image: url(../assets/img/background/salmoncito.jpg);
+    background-size: cover;
+}
+
+form{
+    width: 400px;
+    background-image: url(../assets/img/background/salmocito2.jpg);
+    background-size: auto;
+}
+
+textarea{
+    resize: none;
+}
+
+input[type="submit"] {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.pformulario{
+    font-size: 20px;
+    width: 80%;
+    text-align: center;
+    margin: 30px auto;
+    line-height: 25px;
+}
+.gallery-yt{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 30px;
+}
+
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1628px){
+.title-banner{
+    font-size: 1.3em;
+}
+.lavozdelinterior{
+    display: none;
+}
+.portadasobremi{ 
+    grid-area: portadasobremi;
+    width: 100%;
+    height: 15%;
+}
+
+.imgsobremi{
+    grid-area: imgsobremi;
+    width: 100%;
+    height:100%;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-top: -113px;
+}
+
+.carousel-item{
+    width: 100%;
+    height:100%;
+}
+.textosobremi{ 
+    grid-area: textosobremi;
+    /*background-color: salmon;*/
+    width: 90%;
+    height:90%;
+    margin-top: -110px;
+}
+.ptextosobremi{
+    font-size: 1.25em;
+    width: 90%;
+    background-image: url(../assets/img/background/salmoncito.jpg);
+    background-size: cover;
+}
+}
+
