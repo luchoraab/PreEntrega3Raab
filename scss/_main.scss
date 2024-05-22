@@ -17,17 +17,12 @@ main{
         text-align: center; 
     }
     p{
-        font-size: 30px;
-        width: 80%;
-        text-align: center;
-        margin: 30px auto;
-        line-height: 25px; 
-        font-weight: bold;  
+        font-family: "Roboto", cursive;
     }
     .banner{
         width: 100%;
         height:100vh;
-        background-image: url(../assets/img/feria/visitasilviaferiadellibro.jpg);
+        background-image: url(../assets/img/feria/visitasilviaferiadellibro-transformed.jpeg);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -87,7 +82,6 @@ main{
     }
     .article{
         width: 100%;
-        height: 100vh;
         background-image: url(../assets/img/background/salmoncito.jpg);
         background-size: cover;
         display: flex;
@@ -104,6 +98,7 @@ main{
             align-items: center;
         }
         .ptextolibropatas{
+            margin-top: 15px;
             font-size: 1.25em;
             width: 90%;
             text-align: justify;
@@ -160,18 +155,19 @@ main{
                     }
                 }
                 .btn-img{
-                    background-color: darksalmon;
+                    background-color: $oscuro;
                     text-decoration: none;
                     padding: 0.75em 3em;
                     font-size: 0.9em;
                     margin: 1em;
                     border-radius: 0.5em;
                     color: black;
-                    font-weight: bold; 
+                    font-family: "Roboto", cursive;
+                    font-weight: normal; 
                     margin-top: 10px;
                     margin-bottom: 90px;
                     &:hover{
-                        background-color: salmon;
+                        background-color: $claro;
                         color: white;
                     }
                 }
@@ -189,6 +185,7 @@ main{
         font-size: 20px;
         font-weight: bold;
         .pformulario{
+            font-family: "Roboto", cursive;
             font-size: 25px;
             width: 50%;
             text-align: center;
@@ -199,6 +196,7 @@ main{
             border-color: black;
         }
         form{
+            font-family: "Roboto", cursive;
             width: 30%;
             height: 60%;
             background-image: url(../assets/img/background/blanco.jpg);
@@ -211,7 +209,7 @@ main{
                 margin-left: 50px;
             }
             input, textarea, select{
-                margin-bottom: 20px;
+                margin-bottom: 23px;
             }
             textarea{
                 resize: none;
@@ -227,7 +225,7 @@ main{
     .container-2 {  
         display: grid;
         grid-template-columns: 1.5fr 0.5fr 1fr;
-        grid-template-rows: 0.5fr 0.3fr 2.2fr;
+        grid-template-rows: 0.5fr 2fr 3fr;
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
@@ -239,14 +237,14 @@ main{
         .portadalibropatas{ 
             grid-area: portadalibropatas;
             .sobremi{
-                height: 100%;
+                height: 85%;
             }
         }
         .textolibropatas{ 
             grid-area: textolibropatas;
             width: 100%;
-            height:100vh;
             .ptextolibropatas{
+                margin-left: 40px;
                 font-size: 1.25em;
                 width: 90%;
                 text-align: justify;
@@ -266,10 +264,8 @@ main{
         .imglibropatas{
             grid-area: imglibropatas;
             width: 100%;
-            height:100vh;
             .carousel-item{
                 width:100%;
-                height:100vh;
             }
         }
     }
@@ -293,7 +289,7 @@ main{
     .container-3 {  
         display: grid;
         grid-template-columns: 1.5fr 0.5fr 1fr;
-        grid-template-rows: 0.5fr 0.3fr 2.2fr;
+        grid-template-rows: 0.5fr 1.5fr 3fr;
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
@@ -305,24 +301,19 @@ main{
         .portadasobremi{ 
             grid-area: portadasobremi;
             .sobremi{
-                height: 100%;
-
+                height: 85%;
             }
         }
         .imgsobremi{
             grid-area: imgsobremi;
-            width: 100%;
-            height:100vh;
+            margin-left: 40px;
             .carousel-item{
                 width: 100%;
-                height:100vh;
             }
         }
         .textosobremi{ 
             grid-area: textosobremi;
-            width: 100%;
-            height:100vh;
-            .ptextosobremi{
+            margin-left: 40px;
                 font-size: 1.25em;
                 width: 90%;
                 text-align: justify;
@@ -330,7 +321,7 @@ main{
                 border-style: double;
                 border-color: black;
                 background-image: url(../assets/img/background/blanco.jpg);
-            }
+            
         }
     }           
 }

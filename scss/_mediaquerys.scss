@@ -20,8 +20,7 @@
             height: 4em;
             object-fit: cover;
             justify-content: center;
-            align-items: center;  
-            border-style: solid;   
+            align-items: center;   
             background-color: white;
             border-radius: 20px;
             margin-left: 30px;
@@ -57,7 +56,7 @@
     }
     main{
         .sobremi{
-            font-size: 3rem;
+            font-size: 2rem;
         }
         .banner{
             width: 100vw;
@@ -201,6 +200,7 @@
             }
             .textolibropatas{
                 .ptextolibropatas{
+                    margin-left: 0px;
                     font-size: 1.25em;
                     width: 100%;
                     background-image: url(../assets/img/background/salmoncito.jpg);
@@ -284,12 +284,11 @@
                 grid-area: textosobremi;
                 width: 100%;
                 height:100%;
-                .ptextosobremi{
+                    margin-left: 0px;
                     font-size: 1.25em;
                     width: 100%;
                     background-image: url(../assets/img/background/salmoncito.jpg);
-                    background-size: cover;          
-                }
+                    background-size: cover;
             }
         }
     }
@@ -330,16 +329,15 @@
         margin-top: 20px;
         margin-bottom: 10px;
         .cabecera{
-            width: 20%;
-            height: 60%;
+            width: 30%;
+            height: 80%;
             object-fit: cover;
             justify-content: center;
             align-items: center;  
-            border-style: solid;   
             background-color: white;
             border-radius: 10px;
             margin-left: 30px;
-            margin-bottom: 5px;
+            margin-bottom: 15px;
         }
         .logo{
             margin-left: 10px ;
@@ -429,12 +427,7 @@
             .sobremi{
                 font-size: 3rem;
             }
-            .ptextolibropatas{
-                font-size: 1.25em;
-                width: 100%;
-                background-image: url(../assets/img/background/salmoncito.jpg);
-                background-size: cover;
-            }
+
             .gallery{
                 width: 100%;
                 height: 100%;
@@ -510,7 +503,8 @@
                 height: 100%;
                 margin-top: 10px;
                 .sobremi{
-                    font-size: 3rem;
+                    font-size: 2rem;
+                    height: 100%;
                 }
             }
             .imglibropatas{
@@ -528,11 +522,17 @@
                 grid-area: textolibropatas;
                 width: 100%;
                 height:100%;
+                .ptextolibropatas{
+                margin-left: 20px;
+                width: 100%;
+                height:100%;
+                margin-left: 0px;
+            }
                 .lavozdelinterior{
                     margin-left: 20px;
                     margin-bottom: auto;
                     .videolavoz{
-                        width: 90vw;
+                        display: none;
                     }
                 }
             }
@@ -551,7 +551,7 @@
               background-image: none;
               background-size: none;
               width: 100vw;
-              height: 100%; 
+              margin-top: 10px;
             .portadasobremi{ 
                 grid-area: portadasobremi;
                 width: 100%;
@@ -575,12 +575,7 @@
                 grid-area: textosobremi;
                 width: 100%;
                 height:100%;
-                .ptextosobremi{
-                    font-size: 1.25em;
-                    width: 100%;
-                    background-image: url(../assets/img/background/salmoncito.jpg);
-                    background-size: cover;
-                }
+                margin-left: 0px;
             }
         }
         .formulario{
@@ -676,6 +671,7 @@
                 height:90%;
                 margin-top: -110px;
                 .ptextosobremi{
+                    margin-left: 0px;
                     font-size: 1.25em;
                     width: 90%;
                     background-image: url(../assets/img/background/salmoncito.jpg);

@@ -50,18 +50,19 @@ header{
             .menu{
                 width: 20%;
                 height: 100%;
-                background-color: darksalmon;
+                background-color: $oscuro;
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
                 &:hover{
-                    background-color: salmon;
+                    background-color: $claro;
                 }
                 a{
+                    font-family: "Robot", cursive;
                     text-decoration: none;
                     color: black;
-                    font-weight: bold;
+                    font-weight: normal;
                 }
             }
         }
